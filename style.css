@@ -7,3 +7,29 @@
 body{
     background-color: black;
 }
+
+#healthbar{
+    margin: 2px;
+    position: relative;
+    height: 25px;
+    width: 200px;
+    border: 2px solid cyan;
+    background-color: darkslategray;
+}
+
+.box{
+    position: relative;
+    background-color: darkslategray;
+}
+
+#health, #happy{
+    position: absolute;
+    height: 25px;
+    width: 200px;
+    transition: width 1s;
+    background-color: limegreen;
+}
+
+/* #health:hover, #happy:hover{
+    width: 100px;
+} */
