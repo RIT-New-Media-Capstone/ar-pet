@@ -5,7 +5,7 @@ const baseHappiness = 1;
 
 const barLength = 200;
 
-const value = 0.05;
+const value = 0.1;
 
 function increaseHealth()
 {

@@ -8,8 +8,14 @@ body{
     background-color: black;
 }
 
+.bar{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
 #healthbar{
-    margin: 2px;
     position: relative;
     height: 25px;
     width: 200px;
