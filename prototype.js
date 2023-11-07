@@ -35,7 +35,7 @@ setInterval(function(){
 
     if(health > 0.05)
     {
-        health -= 0.005;
+        health -= 0.001;
         health = Math.round(health * 1000)/1000;
     }
     // healthbar()
@@ -61,18 +61,18 @@ setInterval(function(){
 setInterval(function(){
     if(happiness > 0.05)
     {
-        happiness -= 0.01;
-        happiness = Math.round(happiness * 100)/100;
+        happiness -= 0.005;
+        happiness = Math.round(happiness * 1000)/1000;
     }
 
     const healthBarVal = document.getElementById('happy');
     healthBarVal.style.width = `${barLength*happiness}px`;
 
-    if(health <= 0.25)
+    if(happiness <= 0.25)
     {
         healthBarVal.style.backgroundColor = "red";
     }
-    else if(health <= 0.6)
+    else if(happiness <= 0.6)
     {
         healthBarVal.style.backgroundColor = "gold";
     }
@@ -81,7 +81,7 @@ setInterval(function(){
         healthBarVal.style.backgroundColor = "limegreen";
     }
     // happybar()
-}, 1000);
+}, 750);
 
 
 const bone = document.getElementById('bone');
