@@ -15,6 +15,7 @@ body{
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
+    top: 30px;
 }
 .buttons{
     position: absolute;
