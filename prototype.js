@@ -3,7 +3,7 @@ let happiness = 1;
 const baseHealth = 1;
 const baseHappiness = 1;
 
-const barLength = 200;
+const barLength = 150;
 
 const value = 0.1;
 

@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Neonderthaw&family=Peralta&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
     <title>AR Pet</title>
     <script type="module" src="prototype.js"></script>
     <script type="module" src="main.js"></script>
@@ -17,22 +20,28 @@
 </head>
 
 <body>
-    <div class="bar">
-        <p>Health Bar</p>
+  
+    <div class="healthbars">
+        <div class="bar">
+            <p>Health Bar</p>
         <div id="healthbar">
             <div id="health"></div>
         </div>
-    </div>
-    <div class="bar">
-        <p>Happiness Bar</p>
-        <div id="healthbar">
-            <div id="happy"></div>
+        </div>
+        <div class="bar">
+            <p>Happiness Bar</p>
+            <div id="healthbar">
+                <div id="happy"></div>
+            </div>
         </div>
     </div>
-    <img src="images/boneButton.png" alt="bone" id="bone" class="button">
-    <img src="images/ballButton.png" alt="ball" id="ball" class="button">
-
-    <a-scene embedded arjs>
+  
+    <div class="buttons">
+        <img src="images/boneButton.png" alt="bone" id="bone" class="button">
+        <img src="images/ballButton.png" alt="ball" id="ball" class="button">
+    </div>
+  
+      <a-scene embedded arjs>
         <!-- create your content here. just a box for now -->
         <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
         <!-- define a camera which will move according to the marker position -->
