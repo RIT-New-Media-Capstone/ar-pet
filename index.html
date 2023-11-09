@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <title>AR Pet</title>
     <script type="module" src="prototype.js"></script>
     <script type="module" src="main.js"></script>
+
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
 </head>
+
 <body>
     <div class="bar">
         <p>Health Bar</p>
-    <div id="healthbar">
-        <div id="health"></div>
-    </div>
+        <div id="healthbar">
+            <div id="health"></div>
+        </div>
     </div>
     <div class="bar">
         <p>Happiness Bar</p>
@@ -23,5 +31,14 @@
     </div>
     <img src="images/boneButton.png" alt="bone" id="bone" class="button">
     <img src="images/ballButton.png" alt="ball" id="ball" class="button">
+
+    <a-scene embedded arjs>
+        <!-- create your content here. just a box for now -->
+        <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+        <!-- define a camera which will move according to the marker position -->
+        <ar-marker-camera type="pattern" patternUrl="images/pattern-marker.patt"></ar-marker-camera>
+        <!-- <ar-marker type="pattern" patternUrl="images/pattern-marker.patt"></ar-marker> -->
+    </a-scene>
 </body>
+
 </html>
