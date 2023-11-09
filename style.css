@@ -28,6 +28,11 @@ body{
     background-color: darkslategray;
 }
 
+.button:active{
+    transform: scale(0.875,0.875);
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+}
+
 #health, #happy{
     position: absolute;
     height: 25px;
